@@ -2,17 +2,16 @@ import {
   Component,
   OnInit
 } from '@angular/core';
-import { StarlightCharList } from '../services/client/starlight-charlist.service';
-import { Char } from '../models/starlightdb/char';
-import { Hosts } from '../constants/host';
+import { StarlightCharList } from '../../services/client/starlight-charlist.service';
+import { Char } from '../../models/starlightdb/char';
+import { Hosts } from '../../constants/host';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  providers: [StarlightCharList],
-  styleUrls: ['tab2.page.scss']
+  selector: 'app-dere-list',
+  templateUrl: './dere-list.component.html',
+  styleUrls: ['./dere-list.component.scss'],
 })
-export class Tab2Page implements OnInit {
+export class DereListComponent implements OnInit {
   selectedItem: any;
   itemsRepo: Array<Char> = [];
   items: Array<Char> = [];

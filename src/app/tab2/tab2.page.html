@@ -6,4 +6,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let overview of items">
+      <ion-label>{{overview.kanji_spaced}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
